@@ -1,0 +1,90 @@
+*{
+  font-family: verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+main{
+  padding: 10px;
+  background-color: skyblue;
+  height: auto; 
+}
+
+div.title{
+  border-radius: 0 15% 0 0;
+  background-color: tomato;
+  margin-bottom: 20px;
+  margin: 10px 20px 20px 20px;
+  padding: 5px 5px 5px 15px;
+  border: 5px solid white;
+}
+#title, #description{
+  color: #FAFAFA;
+  background-color: transparent;
+}
+#description{
+  font-style: italic;
+}
+#survey-form{
+  padding: 5px 5px 5px 5px;
+  margin: 20px 20px 20px 20px;
+  color: white;
+  font-size: 20px;
+  background-color: #AABB;
+  border: 5px solid white;
+}
+
+.questions{
+  margin: 10px;
+  display: block;
+}
+
+label{
+  width: 100%;
+  font-size: 22px;
+}
+input, #dropdown, textarea, .choice, #submit{
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.choice{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  color: white;
+  justify-content: space-around;
+}
+
+.choice div{
+  text-align: center;
+}
+
+textarea{
+  height: 100px;
+}
+
+.comments{
+  margin-left: 0px;
+}
+
+#submit{
+  background-color: tomato;
+  width: 100px;
+  border-width: 5px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+@media all and (min-width: 1000px) {
+  div.title{
+    width: 750px;
+  }
+  #survey-form{
+    width: 1000px;
+  }
+}
