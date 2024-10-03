@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: blue;
+  background-color: skyblue;
   height: auto;
   padding: 0.5rem; 
 }
@@ -27,7 +27,7 @@ header{
   font-style: italic;
 }
 #survey-form{
-  padding: 20px;
+  padding: 5px;
   margin: 25px 5px 5px 5px;
   color: white;
   background-color: #AABB;
@@ -47,6 +47,7 @@ label{
 
 .non-select{
   width: 100%;
+  max-width: 650px;
   font-size: 13px;
   padding: 5px 5px 5px 5px;
   color: black;
