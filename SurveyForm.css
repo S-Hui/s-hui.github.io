@@ -85,12 +85,10 @@ textarea{
   padding: 10px;
 }
 
-@media all and (min-width: 1000px) {
-  div.title{
-    width: 750px;
-  }
-  #survey-form{
-    width: 1000px;
+@media all and (min-width: 700px) {
+  body{
+    width: 700px;
+    margin: auto;
   }
   #rating{
     width: 700px;
