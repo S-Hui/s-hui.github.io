@@ -27,8 +27,7 @@ header{
   font-style: italic;
 }
 #survey-form{
-  padding: 0;
-  padding-right: 10px;
+  padding: 20px;
   margin: 25px 5px 5px 5px;
   color: white;
   background-color: #AABB;
@@ -36,7 +35,8 @@ header{
 }
 
 fieldset{
-  padding: 10px;
+  padding-right: 10px;
+
   border: none;
 }
 
@@ -48,7 +48,7 @@ label{
 .non-select{
   width: 100%;
   font-size: 13px;
-  padding: 5px 15px 5px 5px;
+  padding: 5px 5px 5px 5px;
   color: black;
   margin-top: 10px;
   margin-bottom: 20px;
