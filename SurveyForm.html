@@ -10,207 +10,202 @@
   </head>
 
   <body>
-    <main>
-      <div class="title">
-        <h1 id="title">
-          Tell Me About the Audiobooks You Read!
-        </h1>
-        <p id="description">
-          This survey form is part of my first freeCodeCamp certification project to showcase my HTML and CSS skills. No data will be stored. Please note that this form is just a demonstration and doesn’t actually collect any data.
-        </p>
-      </div>
+    <header>
+      <h1 id="title">
+        Tell Me About the Audiobooks You Read!
+      </h1>
+      <p id="description">
+        Note 1: Visit <a href="https://s-hui.github.io/SurveyForm.html">this GitHub page</a> to see this form with css styling if it is not displaying.
+      </p>
+      <p>
+        Note 2: This survey form is part of my first freeCodeCamp certification project to showcase my HTML and CSS skills. No data will be stored. Please note that this form is just a demonstration and doesn’t actually collect any data.
+      </p>
+    </header>
 
+    <main>
       <form id="survey-form">
-        <section class="questions">
+
+        <fieldset>
           <label id="email-label" for="email">
             Your Email Address:
             <input
               id="email"
               type="email"
-              required placeholder="Enter your email address here so we can send you the survey results!"
+              required
+              placeholder="Your email address lets us send you the survey results!"
+              class="non-select"
             />
           </label>
-        </section>
+        </fieldset>
 
-        <section class="questions">
+        <fieldset class="questions">
           <label id="name-label" for="name">
             Audiobook Name: 
             <input 
               id="name"
               type="text"
-              required placeholder="Enter the name of the Audiobook here"
+              required placeholder="Name of the Audiobook"
+              class="non-select"
             />
           </label>
-        </section>
+        </fieldset>
 
-        <section class="questions">
+        <fieldset class="questions">
           <label id="number-label" for="number">
             ISBN Number of the Physical Book:
             <input 
               id="number" 
               type="number" 
-              placeholder="Enter a number here" 
-              min="0" 
-              max="100"
+              placeholder="Numbers only please" 
+              min="10000000000000" 
+              max="9999999999999"
+              class="non-select"
             />
           </label>
-        </section>
+        </fieldset>
 
-        <section class="questions">
+        <fieldset class="questions">
           <label for="dropdown">
             Audiobook's Main Genre
           </label>
-          <select id="dropdown">
+          <select id="dropdown" class="non-select">
             <option value=0>Oh that's a hard question</option>
             <option value=1>Thriller</option>
             <option value=2>Fantasy</option>
             <option value=3>Commedy</option>
           </select>
-        </section>
+        </fieldset>
 
-        <section class="questions">
-          <label for="rating">
+        <fieldset class="questions">
+          <label for="rating" class="select-label">
             Your Rating for the Audiobook (1=Lowest, 5=Highest)
           </label>
-          <section id="rating" class="choice">
-            <div>
-              <label for="rating-1">
-                <input
-                  type="radio"
-                  id="rating-1"
-                  name="rating"
-                  value="1"
-                  checked
-                />
-                1
-              </label>
-            </div>
-            <div>
-              <label for="rating-2">
-                <input
-                  type="radio" 
-                  id="rating-2" 
-                  name="rating" 
-                  value="2"
-                />
-                2
-              </label>
-            </div>
-            <div>
-              <label for="rating-3">
-                <input
-                  type="radio" 
-                  id="rating-3" 
-                  name="rating" 
-                  value="3"
-                />
-                3
-              </label>
-            </div>
-            <div>
-              <label for="rating-4">
-                <input 
-                    type="radio" 
-                    id="rating-4" 
-                    name="rating" 
-                    value="4"
-                />
-                4
-              </label>
-            </div>
-            <div>
-              <label for="rating-5">
-                <input 
-                    type="radio"
-                    id="rating-5" 
-                    name="rating" 
-                    value="5"
-                />
-                5
-              </label>
-            </div>
-          </section>
-        </section>
-
-        <section class="questions">
-          <label for="channels">
-            Where do you recommend accessing this Audiobook?
-          </label>
-          <section id="channels" class="choice">
-            <div>
-              <label>
-                <input
-                  type="checkbox" 
-                  id="Kobo" 
-                  name="Kobo" 
-                  value="Kobo"
-                />
-                Kobo
-              </label>
-            </div>
-            <div>
-              <label>
-                <input 
-                  type="checkbox" 
-                  id="Amazon" 
-                  name="Amazon" 
-                  value="Amazon"
-                />
-                Amazon
-              </label>
-            </div>
-            <div>
-              <label>
-                <input
-                  type="checkbox" 
-                  id="Libby" 
-                  name="Libby" 
-                  value="Libby"
-                />
-                Libby
-              </label>
-            </div>
-            <div>
-              <label>
-                <input
-                  type="checkbox" 
-                  id="Chapters" 
-                  name="Chapters" 
-                  value="Chapters"
-                />
-                Chapters
-              </label>
-            </div>
-            <div>
-              <label>
-                <input 
-                  type="checkbox" 
-                  id="Indigo" 
-                  name="Indigo" 
-                  value="Indigo"
-                />
-                Indigo
-              </label>
-            </div>
-            <div>
-              <label>
-                <input 
-                  type="checkbox" 
-                  for="Others" 
-                  name="Others" 
-                  value="Others"
-                />
-                Others
-              </label>
-            </div>
-          </section>
-
-          <section class="questions comments">
-            <label for="comments">
-              Comments (No spoilers please!)
-              <textarea id="comments"></textarea>
+          <div></div>
+          <fieldset id="rating" class="choice">
+            <label for="rating-1">
+              <input
+                type="radio"
+                id="rating-1"
+                name="rating"
+                value="1"
+                checked
+              />
+              1
             </label>
-          </section>
+            <label for="rating-2">
+              <input
+                type="radio" 
+                id="rating-2" 
+                name="rating" 
+                value="2"
+              />
+              2
+            </label>
+            <label for="rating-3">
+              <input
+                type="radio" 
+                id="rating-3" 
+                name="rating" 
+                value="3"
+              />
+              3
+            </label>
+            <label for="rating-4">
+              <input 
+                  type="radio" 
+                  id="rating-4" 
+                  name="rating" 
+                  value="4"
+              />
+              4
+            </label>
+            <label for="rating-5">
+              <input 
+                  type="radio"
+                  id="rating-5" 
+                  name="rating" 
+                  value="5"
+              />
+              5
+            </label>
+          </fieldset>
+        </fieldset>
+
+      <fieldset class="questions choice">
+        <label for="channels" class="select-label">
+          Where do you recommend accessing this Audiobook?
+        </label>
+        <fieldset>
+          <div>
+            <input
+              type="checkbox" 
+              id="Kobo" 
+              name="Kobo" 
+              value="Kobo"
+            />
+            <label>Kobo</label>
+          </div>
+            
+
+          <div>
+            <input 
+              type="checkbox" 
+              id="Amazon" 
+              name="Amazon" 
+              value="Amazon"
+            />
+            <label>Amazon</label>
+
+          <div>
+            <input
+              type="checkbox" 
+              id="Libby" 
+              name="Libby" 
+              value="Libby"
+            />
+            <label>Libby</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox" 
+              id="Chapters" 
+              name="Chapters" 
+              value="Chapters"
+            />
+            <label>Chapters</label>
+          </div>
+
+          <label>
+            <input 
+              type="checkbox" 
+              id="Indigo" 
+              name="Indigo" 
+              value="Indigo"
+            />
+            Indigo
+          </label>
+
+          <div>
+            <input 
+              type="checkbox" 
+              for="Others" 
+              name="Others" 
+              value="Others"
+            />
+            <label>
+              Others
+            </label>
+          </div>
+        </fieldset>
+      </fieldset>
+      
+        <fieldset class="questions comments">
+          <label for="comments">
+            Comments (No spoilers please!)
+            <textarea id="comments" class="non-select"></textarea>
+          </label>
+        </fieldset>
 
         <input
             type="submit" 
