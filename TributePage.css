@@ -1,7 +1,6 @@
 body{
   background-color: darkblue;
   color: white;
-  font-size: 16px;
   font-family: courier;
   margin: 5vw;
 }
@@ -55,7 +54,7 @@ a:hover{
 
 section{
   max-width: 850px;
-  font-size: 0.7rem;
+  font-size: 1.5rem;
   display: block;
   margin: auto;
   
@@ -66,7 +65,7 @@ section{
 
   #typing-sign{
     display: inline-block;
-    height: 2rem;
+    height: 1.5rem;
     width: 20px;
     background-color: white;
     margin-top: -10rem;
