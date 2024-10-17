@@ -1,0 +1,86 @@
+body{
+  background-color: darkblue;
+  color: white;
+  font-size: 1.5rem;
+  font-family: courier;
+}
+#work-in-progress{
+  background-color: yellow;
+  color: black;
+}
+header{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+figure{
+  display: block;
+  margin: auto;
+  max-width: 700px;
+  width: 90vw;
+  height: auto;
+  text-align: center;
+}
+
+img{
+  display: block;
+  border-radius: 5%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  
+}
+
+figcaption{
+  margin-top: 1rem;
+}
+
+a:link{
+  color: yellow;
+}
+
+a:visited{
+  color: white;
+  }
+
+
+a:hover{
+  color: lightblue;
+}
+
+
+
+section{
+  max-width: 850px;
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+  
+  }
+  #typing{
+    width: 21px;
+  }
+
+  #typing-sign{
+    display: inline-block;
+    height: 2rem;
+    width: 20px;
+    background-color: white;
+    margin-top: -10rem;
+    vertical-align: text-bottom;
+    animation: blink 1.7s infinite;
+  }
+
+@keyframes blink{
+  0%{
+    background-color: white;
+  }
+  95%{
+    background-color: white;
+  }
+  100%{
+    background-color: darkblue;
+  }
+}
