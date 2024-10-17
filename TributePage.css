@@ -70,7 +70,7 @@ section{
     width: 20px;
     background-color: white;
     margin-top: -10rem;
-    vertical-align: text-bottom;
+    vertical-align: sub;
     animation: blink 1.7s infinite;
   }
 
