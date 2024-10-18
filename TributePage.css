@@ -1,15 +1,16 @@
+:root{
+  --content-size: 1.5rem;
+}
+
 body{
   background-color: darkblue;
   color: white;
   font-family: courier;
   margin: 5vw;
 }
-#work-in-progress{
-  background-color: yellow;
-  color: black;
-}
+
 header{
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -22,6 +23,7 @@ figure{
   width: 90vw;
   height: auto;
   text-align: center;
+  font-size: 1 rem;
 }
 
 img{
@@ -30,12 +32,10 @@ img{
   max-width: 100%;
   height: auto;
   margin: auto;
-  
+  margin-bottom: 1rem;
+ 
 }
 
-figcaption{
-  margin-top: 0.5rem;
-}
 
 a:link{
   color: yellow;
@@ -54,23 +54,22 @@ a:hover{
 
 section{
   max-width: 850px;
-  font-size: 1.5rem;
+  font-size: var(--content-size);
   display: block;
   margin: auto;
-  
+  line-height: var(--content-size);
   }
-  #typing{
-    width: 21px;
-  }
+ 
 
   #typing-sign{
     display: inline-block;
-    height: 1.5rem;
-    width: 10px;
+    height: var(--content-size);
+    width: calc(var(--content-size)/2);
     background-color: white;
     margin-top: -10rem;
-    vertical-align: bottom;
+    vertical-align: sub;
     animation: blink 1.7s infinite;
+    
   }
 
 @keyframes blink{
