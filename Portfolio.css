@@ -34,13 +34,15 @@ nav{
 @keyframes waving{
   0%{
     rotate: -20deg;
+    transform-origin: center bottom;
   }
   50%{
     rotate: 0deg;
+    transform-origin: center bottom;
   }
   100%{
     rotate: -35deg;
-
+    transform-origin: center bottom;
   }
 }
 
