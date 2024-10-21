@@ -33,19 +33,19 @@ nav{
 
 @keyframes waving{
   0%{
-    rotate: -50deg;
+    rotate: -20deg;
   }
   50%{
-    rotate: 20deg;
+    rotate: 0deg;
   }
   100%{
-    rotate: -50deg;
+    rotate: -20deg;
 
   }
 }
 
 #wave{
-  rotate: -50deg;
+  rotate: -20deg;
   transform-origin: center bottom;
   display: inline-block;
   animation: waving 1.5s linear;
