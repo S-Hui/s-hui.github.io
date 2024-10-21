@@ -3,47 +3,96 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://s-hui.github.io/Portfolio.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Sharon Hui's Portfolio</title>
   </head>
   <body>
-    <nav id="navbar">
-      <section class="tabs">
-        <a href="#projects">
-          Work Samples
+    <header>
+      <nav id="navbar">
+        <span id="nav-bar-items-positioning">
+        </span>
+        <a href="#projects" class="nav-items">
+          HTML
+        </a>
+        <a
+          href="https://s-hui.github.io/Portfolio.css"
+          target="_blank"
+          class="nav-items">
+          Business Analysis
         </a>
         <a
           href="https://www.linkedin.com/in/sharonhui/"
           id="profile-link"
           target="_blank"
+          class="nav-items"
         >
           LinkedIn Profile
         </a>
-      </section>
-    </nav>
+      </nav>
+    </header>
+    <p id="work-in-progress">
+      Note: Development in progress to include more CSS styling and content. This page has fulfilled and passed all user stories for freeCodeCamp’s Responsive Web Design course.
+    </p>
+    
+    <section id="welcome-section">
+      <div id="wave">🖐️</div>
+      <div>
+        <h1>
+          Hi There! I'm Sharon
+        </h1>
+        <ul>
+          <li>
+            A business graduate with business analysis and marketing skills
+          </li>
+          <li>
+            I'm an aspiring professional who:
+            <ul>
+              <li>
+                Understands needs and pain points
+              </li>
+              <li>
+                  tailors communication based on the audience
+              </li>
+              <li>
+                improves business processes or customer experiences
+              </li>
+            </ul>
+          </li>
+          <li>
+            Fun fact: I built this page myself using HTML and CSS!
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <main>
-      <div id="welcome-section">
-        <p id="work-in-progress">
-          Note: Development in progress to include more CSS styling and content. This page has fulfilled and passed all user stories for freeCodeCamp’s Responsive Web Design course.
-        </p>
-        <h1>
-          Hi!
-        </h1>
-      </div>
-
-      <h2>
-        Are you interested in my Marketing or Business Analysis Work Samples?
-      </h2>
       <section id="projects">
-
-        <a href="https://s-hui.github.io/" class="project-tile" id="marketing">
-          Marketing
-        </a>
-
-        <a href="https://sites.google.com/view/sharonhui" class="project-tile" id="business_analysis">
+        <h2 class="project-title">
+            Here some of my work samples
+        </h2>
+        <h3 class="project-title">
           Business Analysis
-        </a>
+        </h3>
+        <section class="project-group">
+          <div class="project-tile">
+            <h4><a href="https://sites.google.com/view/sharonhui/work-samples/travel-advisory-app">
+              Travel Advisory App
+            </a></h4>
+          </div>
+          <div class="project-tile">
+          </div>
+        </section>
+        
+        <h3 class="project-title">
+          Marketing
+        </h3>
+        <section class="project-group">
+          <div class="project-tile">
+
+          </div>
+          <div class="project-tile">
+          </div>
+        </section>
       </section>
     </main>
 
@@ -51,6 +100,5 @@
       <hr></hr>
       Work of Sharon Hui in 2024
     </footer>
-
   </body>
 </html>
