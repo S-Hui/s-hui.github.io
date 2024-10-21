@@ -39,13 +39,13 @@ nav{
     rotate: 0deg;
   }
   100%{
-    rotate: -20deg;
+    rotate: -35deg;
 
   }
 }
 
 #wave{
-  rotate: -20deg;
+  rotate: -35deg;
   transform-origin: center bottom;
   display: inline-block;
   animation: waving 1.5s linear;
