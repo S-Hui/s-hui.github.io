@@ -35,11 +35,14 @@
     </p>
     
     <section id="welcome-section">
-      <div id="wave">🖐️</div>
-      <div>
+      <div class="grid left">
+        <span id="wave">🖐️</span>
+      </div>
+      <div id="intro" class="grid">
         <h1>
           Hi There! I'm Sharon
         </h1>
+        <!--
         <ul>
           <li>
             A business graduate with business analysis and marketing skills
@@ -48,10 +51,13 @@
             I'm an aspiring professional who:
             <ul>
               <li>
-                Understand needs and pain points
+                Understands needs and pain points
               </li>
               <li>
-                Improve business processes or customer experiences
+                  tailors communication based on the audience
+              </li>
+              <li>
+                improves business processes or customer experiences
               </li>
             </ul>
           </li>
@@ -59,29 +65,48 @@
             Fun fact: I built this page myself using HTML and CSS!
           </li>
         </ul>
+        -->
       </div>
     </section>
 
-    <main id="projects">
-      <h2 class="project-title">
+    <main>
+      <h2>
         Here some of my work samples
       </h2>
 
-      <section class="project-group">
+      <section id="projects">
         <h3 class="project-title">
           HTML & CSS
         </h3>
 
-        <div class="project-tile">
-          <a href="https://s-hui.github.io/SurveyForm.css">
-            Survey Form
+        <div class="projects">
+          
+          <a 
+            href="https://s-hui.github.io/SurveyForm.css" 
+            target="_blank"
+            class="project-tile"
+          >
+            <figure>
+              <img src="https://s-hui.github.io/images/SurveyForm.png" />
+              <figcaption>Survey Form</figcaption>
+            </figure>
+          </a>
+
+
+          <a 
+            href="https://s-hui.github.io/TributePage.css" 
+            target="_blank"
+            class="project-tile"
+          >
+            <figure>
+              <img src="https://s-hui.github.io/images/TributePage.png" />
+              <figcaption>
+                Tribute Page
+              </figcaption>
+            </figure>
           </a>
         </div>
-        <div class="project-tile">
-          <a href="https://s-hui.github.io/TributePage.css">
-            Tribute Page
-          </a>
-        </div>
+
       </section>
 
       <section class="project-group">
@@ -90,13 +115,13 @@
         </h3>
 
         <div class="project-tile">
-          <a href="https://sites.google.com/view/sharonhui/work-samples/travel-advisory-app">
+          <a href="https://sites.google.com/view/sharonhui/work-samples/travel-advisory-app" target="_blank">
             Travel Advisory App
           </a>
         </div>
 
         <div class="project-tile">
-          <a href="https://sites.google.com/view/sharonhui/work-samples/student-awards-application-process-improvement-initiative?authuser=0">
+          <a href="https://sites.google.com/view/sharonhui/work-samples/student-awards-application-process-improvement-initiative" target="_blank">
             Improving the Student Awards Application Process
           </a>
         </div>
