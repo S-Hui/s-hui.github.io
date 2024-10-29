@@ -105,7 +105,7 @@ h2{
 }
 
 
-#projects{
+#projects-content{
   padding-top: 10px;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -123,10 +123,6 @@ a{
 }
 
 
-.project-group{
-  display: grid;
-}
-
 .project-title{
   padding: 0;
   margin-left: 0;
@@ -134,28 +130,27 @@ a{
 }
 
 
+img, .icon{
+  height: 50vh;
+  width: auto;
+  border-radius: 15%;
+  border: 7px #FAFAFA solid;
+  font-size: 45rem;
+  
+}
+
 figcaption{
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
   
 }
 
-img{
-  height: 50vh;
-  width: auto;
-  border-radius: 15%;
-  border: 7px #FAFAFA solid
-}
-
-.icon{
-  font-size: 50vh;
-  
-}
 .projects{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: align-items;
 }
 
 
