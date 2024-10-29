@@ -1,36 +1,61 @@
-body{
+html{
+  font-size: 62.5%;
   font-family: "Gill Sans", sans-serif;
-  background: rgb(#FAFAFA);
+  background: #FAFAFA;
+  color: white;
+}
+
+:root{
+  --main-color: #002D72;
+  --top-color: Maroon;
+}
+
+body{
   margin: 0;
 }
 
-@media only screen and (min-width:1300px){
-  #nav-bar-items-positioning{
-    width: 60vw;
-  }
-}
 
 nav{
   position: fixed;
   top: 0;
-  right: 0;
-  background: Maroon;
-  width: 100%;
+  width: 100vw;
+  background: var(--top-color);
   display: flex;
   justify-content: space-around;
-  padding: 2vh;
-  font-size: 1.2rem;
   z-index: 1;
+  border-bottom: 0.5vh solid #FAFAFA;
 }
 
 .nav-items{
-  height: 100%;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  padding: 2vh 3.5vw;
+  font-size: 2rem;
   font-weight: 600;
-  color: white;
   text-decoration: none;
   }
+
+  #nav-bar-space{
+    width: 45vw;
+  }
+
+#welcome-section{
+  margin-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--top-color);
+  border-radius:0 0 35% 20%;
+  padding-bottom: 7vh;
+ 
+}
+
+#wave{
+  rotate: -35deg;
+  transform-origin: 50% 100%;
+  animation: waving 1.5s linear;
+  font-size: 20rem;
+  padding: 0;
+  margin: 0;
+
+}
 
 @keyframes waving{
   0%{
@@ -49,108 +74,120 @@ nav{
 }
 
 
-.grid{
-  padding: 0;
-  margin:0;
-  color: white;
-}
-.left{
-  padding-left: 0;
-  text-align: right;
-}
-#wave{
-  display: inline-block;
-  position: relative;
-  top: -2rem;
-  rotate: -35deg;
-  transform-origin: 50% 100%;
-  animation: waving 1.5s linear;
-  font-size: 20rem;
-  text-align: right;
-  padding: 0;
-  margin: 0;
-  align-self: right;
-  margin-right: -3rem;
-
-}
-
-
-#work-in-progress{
-  margin-top: 70px;
-  background-color: yellow;
-  color: black;
-  width: 100%;
-}
-
-#welcome-section{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 10px;
-  background-color: slateblue;
-}
-
 h1{
-  font-size: 4rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  font-size: 5rem;
+  margin-top: 9rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
 
 }
 
 ul{
   margin-bottom: 2rem;
+  text-align: left;
   list-style-type: none;
+  font-size: 2rem;
+  padding-left: 1rem;
 }
 
+#about-me ul, #aspiration{
+  display: none;
+}
 
 h2{
-  background-color: lavender;
-  width: 100%;
+  font-size: 3.5rem;
   margin: 0;
   padding: 5vh;
+  font-weight: 900;
+  color: var(--main-color);
+  text-align: center;
 
 }
+
 
 #projects{
   padding-top: 10px;
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-bottom: 5vh;
+  background: var(--main-color);
+  border-radius: 25% 20% 0 0; 
+  text-align: center;
   
 }
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+
 .project-group{
   display: grid;
 }
 
+.project-title{
+  padding: 0;
+  margin-left: 0;
+  font-size: 3rem;
+}
+
 
 figcaption{
+  margin-top: 1rem;
   text-align: center;
+  font-size: 2rem;
+  
 }
 
 img{
-  height: 300px;
+  height: 50vh;
   width: auto;
   border-radius: 15%;
+  border: 7px #FAFAFA solid
 }
 
+.icon{
+  font-size: 50vh;
+  
+}
 .projects{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-footer{
-  background-color: maroon;
-  color: white;
-  padding-left: 5vw;
-}
 
 hr{
   height: 5px;
-  background-color: slateblue;
   border: 0px;
   padding-left: 0;
   margin-left: 0;
 
 }
+footer{
+  background-color: maroon;
+  color: white;
+  padding-left: 5vw;
+  padding-bottom: 1vh;
+}
 
+@media all and (max-width: 1300px){
+  #nav-bar-space{
+    display: none;
+  }
+  #wave{
+    display: none;
+  }
+  #about-me-grid{
+    width: 100vw;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #about-me{
+    padding-left: 0;
+    text-align: center;
+  }
+}
