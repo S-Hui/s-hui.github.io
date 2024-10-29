@@ -135,8 +135,10 @@ img, .icon{
   width: auto;
   border-radius: 15%;
   border: 7px #FAFAFA solid;
-  font-size: 45rem;
-  
+}
+
+i.material-symbols-outlined{
+  font-size: 50rem;
 }
 
 figcaption{
