@@ -3,51 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://s-hui.github.io/Portfolio.css">
+    <link rel="stylesheet" href="https://s-hui.github.io/Portfolio.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=docs" />
     <title>Sharon Hui's Portfolio</title>
   </head>
+
   <body>
     <header>
       <nav id="navbar">
-        <span id="nav-bar-items-positioning">
-        </span>
-        <a href="#projects" class="nav-items">
-          HTML
-        </a>
-        <a
-          href="https://sites.google.com/view/sharonhui"
-          target="_blank"
-          class="nav-items">
-          Business Analysis
-        </a>
-        <a
-          href="https://www.linkedin.com/in/sharonhui/"
-          id="profile-link"
-          target="_blank"
+        <span id="nav-bar-space"></span>
+         <a 
+          href= "#projects" 
+          target="_blank" 
           class="nav-items"
+        >
+          Work Samples
+        </a>
+        <a 
+          href="https://github.com/S-Hui/s-hui.github.io" 
+          class="nav-items"
+          target="_blank"
+        >
+          GitHub Profile
+        </a>
+        <a 
+          href="https://www.linkedin.com/in/sharonhui/" 
+          target="_blank" 
+          class="nav-items"
+          id="profile-link"
         >
           LinkedIn Profile
         </a>
       </nav>
     </header>
+
+<!--
     <p id="work-in-progress">
       Note: Development in progress to include more CSS styling and content. This page has fulfilled and passed all user stories for freeCodeCamp’s Responsive Web Design course.
     </p>
-    
+--> 
     <section id="welcome-section">
-      <div class="grid left">
-        <span id="wave">🖐️</span>
-      </div>
-      <div id="intro" class="grid">
+      <span id="wave" class="grid">🖐️</span>
+      <span id="about-me-grid">
         <h1>
           Hi There! I'm Sharon
         </h1>
-        <!--
-        <ul>
+        <ul id="about-me">
           <li>
             A business graduate with business analysis and marketing skills
           </li>
-          <li>
+          <li id="aspiration">
             I'm an aspiring professional who:
             <ul>
               <li>
@@ -65,13 +70,12 @@
             Fun fact: I built this page myself using HTML and CSS!
           </li>
         </ul>
-        -->
-      </div>
+      </span>
     </section>
 
     <main>
       <h2>
-        Here some of my work samples
+       Work Samples
       </h2>
 
       <section id="projects">
@@ -107,40 +111,49 @@
           </a>
         </div>
 
-      </section>
 
-      <section class="project-group">
+
         <h3 class="project-title">
           Business Analysis
         </h3>
 
-        <div class="project-tile">
-          <a href="https://sites.google.com/view/sharonhui/work-samples/travel-advisory-app" target="_blank">
-            Travel Advisory App
+        <div class="projects">
+          <a
+            href="https://sites.google.com/view/sharonhui/work-samples/travel-advisory-app"
+            target="_blank"
+          >
+            <figure>
+              <img src="https://s-hui.github.io/images
+/travel advisory.png">
+              <figcaption>Travel Advisory App</figcaption>
+            </figure>
           </a>
-        </div>
 
-        <div class="project-tile">
-          <a href="https://sites.google.com/view/sharonhui/work-samples/student-awards-application-process-improvement-initiative" target="_blank">
-            Improving the Student Awards Application Process
+          <a 
+            href="https://sites.google.com/view/sharonhui/work-samples/student-awards-application-process-improvement-initiative"
+            target="_blank"
+          >
+            <figure>
+              <span class="material-symbols-outlined icon">docs</span>
+              <figcaption>Improving the Student Awards Application Process</figcaption>
+            </figure>
           </a>
+
+          <a
+            href="https://sites.google.com/view/sharonhui/work-samples/four-corner"
+            target="_blank"
+          >
+            <figure>
+              <span class="material-symbols-outlined icon">docs</span>
+              <figcaption>Four Corner Healthcare Center Cyber Security Risk Analysis</figcaption>
+            </figure>
+          </a>
+
+
         </div>
 
       </section>
 
-      <section class="project-group">        
-        <h3 class="project-title">
-          Marketing
-        </h3>
-
-        <div class="project-tile">
-
-        </div>
-        <div class="project-tile">
-        
-        </div>
-
-      </section>
 
     </main>
 
