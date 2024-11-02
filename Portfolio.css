@@ -73,7 +73,9 @@ nav{
   }
 }
 
-
+li{
+  margin-bottom: 3rem;
+}
 h1{
   font-size: 5rem;
   margin-top: 9rem;
