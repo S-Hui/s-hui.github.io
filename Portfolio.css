@@ -136,6 +136,11 @@ img, .icon{
   padding: auto;
 }
 
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 i.material-symbols-outlined{
   font-size: 45vh;
@@ -175,13 +180,13 @@ footer{
   }
   img, .icon{
     max-width: 95%;
-    height: auto;
     margin: 0 auto;
+    min-height: 33vh;
   }
   #projects-content{
     border-radius: 10% 7% 0 0; 
 
   i.material-symbols-outlined{
-    font-size: 85%;
+    font-size: 33vh;
 }
 }
