@@ -171,20 +171,8 @@ footer{
 }
 
 @media all and (max-width: 1300px){
-  #nav-bar-space{
+  #nav-bar-space, #wave{
     display: none;
   }
-  #wave{
-    display: none;
-  }
-  #about-me-grid{
-    width: 100vw;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  #about-me{
-    padding-left: 0;
-    text-align: center;
-  }
+
 }
