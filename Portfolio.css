@@ -146,18 +146,25 @@ i.material-symbols-outlined{
   font-size: 45vh;
 }
 
-figcaption{
+figcaption, .icon-caption{
   margin-top: 2rem;
   margin-bottom: 5rem;
-  text-align: center;
   font-size: 2rem;
-  
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.no-picture{
+  max-width:400px; 
+  width: 55%
 }
 
 .projects{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: align-items;
 }
 
@@ -187,6 +194,6 @@ footer{
     border-radius: 10% 7% 0 0; 
 
   i.material-symbols-outlined{
-    font-size: 33vh;
+    font-size: 33vw;
 }
 }
