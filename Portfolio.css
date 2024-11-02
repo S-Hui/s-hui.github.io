@@ -143,6 +143,7 @@ i.material-symbols-outlined{
 
 figcaption{
   margin-top: 2rem;
+  margin-bottom: 5rem;
   text-align: center;
   font-size: 2rem;
   
@@ -174,7 +175,7 @@ footer{
   #nav-bar-space, #wave, #about-me{
     display: none;
   }
- img{
+ img, .no-picture{
   max-width: 95%;
   height: auto;
   margin: 0 auto;
