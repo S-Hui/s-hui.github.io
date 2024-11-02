@@ -171,7 +171,7 @@ footer{
 }
 
 @media all and (max-width: 1300px){
-  #nav-bar-space, #wave{
+  #nav-bar-space, #wave, #about-me{
     display: none;
   }
 
