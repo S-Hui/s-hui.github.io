@@ -90,9 +90,6 @@ ul{
   padding-left: 1rem;
 }
 
-#about-me ul, #aspiration{
-  display: none;
-}
 
 h2{
   font-size: 3.5rem;
@@ -135,10 +132,13 @@ img, .icon{
   width: auto;
   border-radius: 15%;
   border: 7px #FAFAFA solid;
+  text-align: center;
+  padding: auto;
 }
 
+
 i.material-symbols-outlined{
-  font-size: 50vh;
+  font-size: 45vh;
 }
 
 figcaption{
@@ -160,10 +160,8 @@ figcaption{
 hr{
   height: 5px;
   border: 0px;
-  padding-left: 0;
-  margin-left: 0;
-
 }
+
 footer{
   background-color: maroon;
   color: white;
@@ -172,12 +170,18 @@ footer{
 }
 
 @media all and (max-width: 1300px){
-  #nav-bar-space, #wave, #about-me{
+   #nav-bar-space, #wave, #about-me{
     display: none;
   }
- img, .no-picture{
-  max-width: 95%;
-  height: auto;
-  margin: 0 auto;
+  img, .icon{
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #projects-content{
+    border-radius: 10% 7% 0 0; 
+
+  i.material-symbols-outlined{
+    font-size: 85%;
 }
 }
