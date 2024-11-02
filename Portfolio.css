@@ -174,5 +174,9 @@ footer{
   #nav-bar-space, #wave, #about-me{
     display: none;
   }
-
+ img{
+  max-width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
 }
