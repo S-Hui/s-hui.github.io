@@ -130,8 +130,8 @@ a{
 
 .frame{
   height: 50vh;
-  max-width:400px; 
-  width: 44vh;
+  max-width:750px; 
+  width: auto;
   border-radius: 15%;
   border: 7px #FAFAFA solid;
   text-align: center;
@@ -209,6 +209,6 @@ footer{
     border-radius: 10% 7% 0 0; 
 
   i.material-symbols-outlined{
-    font-size: min(33vw, 370px);
+    font-size: min(33vw, 350px);
 }
 }
