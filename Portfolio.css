@@ -129,7 +129,7 @@ a{
 
 .frame{
   height: 50vh;
-  width: auto;
+  width: max(450px, 44vh);
   border-radius: 15%;
   border: 7px #FAFAFA solid;
   text-align: center;
@@ -138,6 +138,7 @@ a{
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-top: 5vh;
 }
 
 img{
@@ -161,7 +162,6 @@ figcaption, .icon-caption, .project-links{
 }
 
 .project-links{
-  margin-bottom: 5rem;
   display: inline;
 }
 
@@ -201,6 +201,7 @@ footer{
     max-width: 95%;
     margin: 0 auto;
     min-height: 33vh;
+    margin-top: 5vh;
   }
   #projects-content{
     border-radius: 10% 7% 0 0; 
