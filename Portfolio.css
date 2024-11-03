@@ -148,7 +148,7 @@ img{
 
 
 i.material-symbols-outlined{
-  font-size: 400px;
+  font-size: max(400px, 40vh);
 }
 
 figcaption, .icon-caption, .project-links{
@@ -206,6 +206,6 @@ footer{
     border-radius: 10% 7% 0 0; 
 
   i.material-symbols-outlined{
-    font-size: min(33vw, 350px);
+    font-size: min(33vw, 370px);
 }
 }
