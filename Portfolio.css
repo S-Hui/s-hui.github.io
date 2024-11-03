@@ -127,9 +127,11 @@ a{
 }
 
 
+
 .frame{
   height: 50vh;
-  width: max(450px, 44vh);
+  max-width:400px; 
+  width: 44vh;
   border-radius: 15%;
   border: 7px #FAFAFA solid;
   text-align: center;
@@ -142,7 +144,9 @@ a{
 }
 
 img{
-  height: 50vh;
+  height: auto;
+  max-width: 400px;
+  width: 44vh;
   object-fit: contain;
 
 }
@@ -159,23 +163,21 @@ figcaption, .icon-caption, .project-links{
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  max-width:400px; 
+  width: 44vh;
 }
 
 .project-links{
   display: inline;
 }
 
-.no-picture{
-  max-width:400px; 
-  width: 55%
-}
 
 .projects{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: align-items;
-}
+  }
 
 
 hr{
