@@ -212,14 +212,14 @@ footer{
     display: none;
   }
   .frame{
-    max-width: 80vw;
-    margin: 0 auto;
+    max-width: 50%;
+    margin: 2%;
     height: auto;
     margin-top: 5vh;
   }
   img{
     height: auto;
-    max-width: 75vw;
+    max-width: 45%;
   }
   #projects-content{
     border-radius: 10% 7% 0 0; 
