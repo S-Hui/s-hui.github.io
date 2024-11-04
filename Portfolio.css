@@ -217,6 +217,10 @@ footer{
     height: auto;
     margin-top: 5vh;
   }
+  img{
+    height: auto;
+    max-width: 75vw;
+  }
   #projects-content{
     border-radius: 10% 7% 0 0; 
 
