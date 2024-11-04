@@ -115,8 +115,7 @@ h2{
 
 a{
   color: white;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 
 
@@ -124,24 +123,36 @@ a{
   padding: 0;
   margin-left: 0;
   font-size: 3rem;
+
 }
 
+.project-tile{
+  display: block;
+  align-items: center;
+}
 
+figure, .icon{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 .frame{
   height: auto;
-  min-width:410px; 
-  width: calc(40vh+10px);
+  min-height: 400px;
+  min-width:450px; 
+  width: calc(40vh+50px);
   border-radius: 15%;
   border: 7px #FAFAFA solid;
-  text-align: center;
   background: #002244;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  margin-top: 5vh;
 }
+
+
 
 img{
   height: auto;
@@ -165,6 +176,7 @@ figcaption, .icon-caption, .project-links{
   justify-content: center;
   max-width:400px; 
   width: 44vh;
+
 }
 
 .project-links{
@@ -209,6 +221,6 @@ footer{
     border-radius: 10% 7% 0 0; 
 
   i.material-symbols-outlined{
-    font-size: min(33vw, 350px);
+    font-size: min(33vw, 370px);
 }
 }
