@@ -129,9 +129,9 @@ a{
 
 
 .frame{
-  height: 50vh;
-  max-width:750px; 
-  width: auto;
+  height: auto;
+  min-width:410px; 
+  width: calc(40vh+10px);
   border-radius: 15%;
   border: 7px #FAFAFA solid;
   text-align: center;
@@ -145,8 +145,8 @@ a{
 
 img{
   height: auto;
-  max-width: 400px;
-  width: 44vh;
+  min-width: 400px;
+  width: 40vh;
   object-fit: contain;
 
 }
