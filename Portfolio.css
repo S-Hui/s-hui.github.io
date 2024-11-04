@@ -140,7 +140,7 @@ figure, .icon{
 
 .frame{
   height: auto;
-  min-height: 400px;
+  min-height: 550px;
   min-width:450px; 
   width: calc(40vh+50px);
   border-radius: 15%;
