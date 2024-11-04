@@ -212,7 +212,7 @@ footer{
     display: none;
   }
   .frame{
-    max-width: 80%;
+    max-width: 80vw;
     margin: 0 auto;
     height: auto;
     margin-top: 5vh;
