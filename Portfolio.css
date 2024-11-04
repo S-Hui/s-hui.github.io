@@ -9,6 +9,9 @@ html{
   --main-color: #002D72;
   --top-color: Maroon;
 }
+*{
+  box-sizing: border-box;
+}
 
 body{
   margin: 0;
@@ -44,6 +47,7 @@ nav{
   background-color: var(--top-color);
   border-radius:0 0 35% 20%;
   padding-bottom: 7vh;
+  width: 100vw;
  
 }
 
@@ -110,6 +114,7 @@ h2{
   background: var(--main-color);
   border-radius: 25% 20% 0 0; 
   text-align: center;
+  width: 100vw;
   
 }
 
@@ -202,29 +207,83 @@ footer{
   color: white;
   padding-left: 5vw;
   padding-bottom: 1vh;
+  width: 100vw;
 }
 
-@media all and (max-width: 1300px){
+@media all and (max-width: 500px){
+
   html{
     font-size: 12px;
   }
-   #nav-bar-space, #wave, #about-me{
+
+  #nav-bar-space, #wave, #about-me{
     display: none;
   }
-  .frame{
-    max-width: 200px;
-    width: 50%;
-    margin: 2%;
-    height: auto;
-    margin-top: 5vh;
-  }
-  img{
-    height: auto;
-    max-width: 190px;
-    width: 45%;
-  }
+
   #projects-content{
     border-radius: 10% 7% 0 0; 
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+ .project-tile{
+  display: block;
+  align-items: center;
+}
+
+figure, .icon{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.frame{
+  height: auto;
+  width: 80vw;
+  min-width: 0;
+  min-height: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 5px #FAFAFA solid;
+  margin-top: 5vh;
+}
+
+
+
+img{
+  margin-left: 0;
+  height: auto;
+  min-width: 0px;
+  width: 80vw;
+  object-fit: contain;
+
+}
+
+
+
+figcaption, .icon-caption, .project-links{
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width:400px; 
+  width: 44vh;
+
+}
+
+.project-links{
+  display: inline;
+}
+
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: align-items;
+  }
+  
 
   i.material-symbols-outlined{
     font-size: min(33vw, 370px);
