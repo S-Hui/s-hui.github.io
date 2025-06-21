@@ -110,7 +110,23 @@ h1, #greetings{
     width: 60%;
 }
   
-  
+#point-down{
+    animation: catch-attention 1.5s linear;
+    opacity: 1;
+}
+      
+@keyframes catch-attention{
+    0%{
+        opacity: 0;
+    }
+        
+    100%{
+        opacity: 0;
+
+    }
+}
+
+
 h2{
     font-size: 3.5rem;
     margin: 0;
