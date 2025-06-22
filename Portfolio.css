@@ -132,7 +132,7 @@ h1, #greetings{
 #BA, #RevOps, #MarOps, #SalesOps{ 
     position: absolute;
     animation-duration: 2.8s;
-    animation-fill-mode: backward;
+    animation-fill-mode: forwardward;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     opacity: 0;
@@ -240,7 +240,7 @@ h1, #greetings{
         opacity: 0;
     }
 
-    75%, 99%{
+    75%, 100%{
         display: inline;
         opacity: 1;
     }
