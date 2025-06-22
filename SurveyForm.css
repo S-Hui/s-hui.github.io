@@ -1,103 +1,119 @@
+:root{
+    font-size: 62.5%;
+    --answer: 1.5rem;
+    --question: 1.7rem;
+}
+  
 *{
   font-family: taroma, sans-serif;
   scroll-behavior: smooth;
-  font-size: auto;
   box-sizing: border-box;
 }
 
-body{
+html{
   background-color: skyblue;
-  height: auto;
-  padding: 0.5rem; 
+}
+
+body{
+  max-width: 700px;
+  margin: auto;
+  font-size: var(--answer);
+}
+
+header, #survey-form{
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  border: 0.5rem solid white;
+  color: white;
 }
 
 header{
   border-radius: 0 15% 0 0;
   background-color: tomato;
-  margin: 5px 5px 5px 5px;
-  padding: 5px 15px 5px 15px;
-  border: 5px solid white;
-  color: #FAFAFA;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
 }
 
 #title{
-  font-size: 25px;
+  font-size: 3rem;
 }
 
-#description, p{
+.description{
   font-style: italic;
 }
+
 #survey-form{
-  padding: 5px;
-  margin: 25px 5px 5px 5px;
-  color: white;
+  margin-top: 5%;
   background-color: #AABB;
-  border: 5px solid white;
+  padding: var(--answer);
 }
 
-fieldset{
-  padding-right: 10px;
-
+.questions{
+  width: 100%;
+  padding: var(--answer);
+  margin: 0;
   border: none;
 }
 
-label{
-  width: 100%;
-  font-size: 17px;
+.question{
+  padding: 0;
+  font-size: var(--question);
+
 }
 
-.non-select{
+
+.non-select, select{
   width: 100%;
-  max-width: 650px;
-  font-size: 13px;
-  padding: 5px 5px 5px 5px;
+  font-size: var(--answer);
+  padding: var(--answer);
   color: black;
-  margin-top: 10px;
-  margin-bottom: 20px;
-
+  border: none;
+  background-color: #FAFAFA;
 }
 
-fieldset:nth-of-type(1),
-fieldset:nth-of-type(2),
-fieldset:nth-of-type(3),
-.comments{
-  padding-right: 30px;
+
+
+.non-select::placeholder, select{
+  color: black;
+  font-size: var(--answer);
 }
 
-#rating{
-  width: 100%;
+
+
+
+legend{
+  float: left;
+}
+
+
+
+.selections{
+  clear: left;
   display: flex;
-  justify-content: space-around;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.select-label{
-  padding-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--question);
+  font-size: var(--answer);
+  padding: var(--answer) 0;
 }
 
 textarea{
-  height: 100px;
+  height: 10rem;
 }
 
 
 #submit{
   background-color: tomato;
-  width: 100px;
-  border-width: 5px;
-  font-size: 20px;
+  margin: var(--answer) calc(50% - var(--answer) * 2 - 0.5rem);
+  width: fit-content;
+  font-size: 2rem;
   color: white;
   border: none;
-  margin: 15px;
-  padding: 10px;
+  padding: 1rem;
+
 }
 
-@media all and (min-width: 700px) {
-  body{
-    width: 700px;
-    margin: auto;
-  }
-  #rating{
-    width: 700px;
-  }
-}
