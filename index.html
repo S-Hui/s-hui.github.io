@@ -24,54 +24,67 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   
-  <header>
-    <nav id="navbar">
-      <span id="nav-bar-space"></span>
-      <a 
-        href= "#projects" 
-        target="_blank" 
-        class="nav-items"
-      >
-        Work Samples
-      </a>
+<header>
+      <nav id="navbar">
+        <!--<a 
+          href= "#projects" 
+          target="_blank" 
+          class="nav-items"
+        >
+          Work Samples
+        </a>
+      -->
+        <a 
+          href="https://github.com/S-Hui/s-hui.github.io" 
+          class="nav-items"
+          target="_blank"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </a>
 
-      <a 
-        href="https://github.com/S-Hui/s-hui.github.io" 
-        class="nav-items"
-        target="_blank"
-      >
-        GitHub Profile
-      </a>
+        <a 
+          href="https://www.linkedin.com/in/sharonhui/" 
+          target="_blank" 
+          class="nav-items"
+          id="profile-link"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+      </nav>
+    </header>
 
-      <a 
-        href="https://www.linkedin.com/in/sharonhui/" 
-        target="_blank" 
-        class="nav-items"
-        id="profile-link"
-      >
-        LinkedIn Profile
-      </a>
-    </nav>
-  </header>
 
-  <section id="welcome-section">
-    <div id="wave" aria-label="waving hand">🖐️</div>
-    <div id="greetings">Hi There!</div>
-    <h1>
-      I'm Sharon
-    </h1>
-    <p class="self-introduction">
-      Aspiring Business Analyst or RevOps/MarOps/SalesOps Specialist with a marketing background
-    </p>
-    <p class="self-introduction">
-      Scroll around—this very webpage is also my work sample!
-    </p>
-  </section>
+    <section id="welcome-section">
+      <!--<div id="wave" aria-label="waving hand">🖐️</div>-->
+      <div id="greetings">Hi<span class="concise"> There</span>!</div>
+      <h1>
+        I'm Sharon
+      </h1>
+      <p class="self-introduction concise">
+        Marketing Graduate, Aspiring
+
+        <span class="aspiration" id="BA"> Business Analyst </span>
+        <span class="aspiration" id="RevOps">RevOps Specialist</span>
+        <span class="aspiration" id="MarOps">MarOps Specialist</span>
+        <span class="aspiration" id="SalesOps">SalesOps Specialist</span>
+      </p>
+      <p class="self-introduction">
+        Scroll around—this very webpage from scratch!
+      </p>
+    </section>
+
+     
 
   <main>
     <h2>
       Work Samples
     </h2>
+
+    <div id="arrow"></div>
 
     <section id="projects-content">
 
@@ -82,7 +95,7 @@
           class="project"
         >
           <div class="project-title">
-            <h4 class="context">A Business Analysis and UX Project</h4>
+            <h4 class="context">A <span class="skill">Business Analysis</span> and <span class="skill">UX</span> Project</h4>
             <H3>
               Travel Advisory App
             </H3>
@@ -90,16 +103,18 @@
           </div>
 
           <figure>
+            <!---
             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv0aLUL9aZjhLbu1BTUmNuN%2FHi-Fidelity_submitted-copy%3Fnode-id%3D2%253A3%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A3" allowfullscreen></iframe>
-            <figcaption class="caption">
+            
+          --><figcaption class="caption">
               High-fidelity Figma prototype of the Travel Advisory App, featuring only the interfaces I worked on
             </figcaption>
           </figure>
 
           <div class="project-description">
-            <h4>Skills</h4>
+
             <span>
-              <h5>Business Analysis Skills</h5>
+              <h4>Business Analysis Skills</h4>
               <ul class="skills">
                 <li>Process Mapping (BPMN 2.0)</li>
                 <li>User Stories</li>
@@ -112,7 +127,7 @@
             </span>
 
             <span>
-              <h5>Marketing/ UX Skills</h5>
+              <h4>Marketing/ UX Skills</h4>
               <ul class="skills">
                 <li>Persona & User Scenarios</li>
                 <li>Wireframing and High-Fidelity Prototyping using Figma</li>
@@ -136,23 +151,23 @@
             class="project"
           >
             <div class="project-title">
-              <h4 class="context">A Business Analysis and UX Project</h4>
+              <h4 class="context">A <span class="skill">Business Analysis</span> and <span class="skill">UX</span> Project</h4>
               <H3>
                 Enhancing the User Experience of George Brown College’s Awards Application
               </H3>
               <p>Collaborated with a team of 4 to analyze and propose improvements for the award application portal, achieving an A grade</p>
             </div>
             <figure>
-              <img src="https://s-hui.github.io/images/Award.png" loading="lazy" />
+              <img src="https://s-hui.github.io/images/Award.png" />
               <figcaption class="caption">
                 Image generated by Microsoft Copilot
               </figcaption>
             </figure>
 
             <div class="project-description">
-              <h4>Skills</h4>
+
               <span>
-                <h5>Business Analysis Skills</h5>
+                <h4>Business Analysis Skills</h4>
                 <ul class="skills">
                   <li>Business Model Canvas</li>
                   <li>Root Cause Analysis</li>
@@ -168,7 +183,7 @@
               
 
               <span>
-                <h5>Marketing/ UX Skills</h5>
+                <h4>Marketing/ UX Skills</h4>
                 <ul class="skills">
                   <li>Persona</li>
                   <li>Empathy Map</li>
@@ -193,7 +208,7 @@
           class="project"
         >
           <div class="project-title">
-            <h4 class="context">A Generative AI Project</h4>
+            <h4 class="context">A <span class="skill">Generative AI</span> Project</h4>
             <H3>
               Declutter
             </H3>
@@ -201,10 +216,10 @@
           </div>
 
           <figure class="picture">
-            <iframe src="https://www.kaggle.com/embed/yysharonhui/declutter-public?kernelSessionId=235092493" loading="lazy" title="Declutter"></iframe>
+            <iframe src="https://www.kaggle.com/embed/yysharonhui/declutter-public?kernelSessionId=235092493" title="Declutter_Public"></iframe>
             <!--<img src="https://s-hui.github.io/images/Declutter.png" />-->
             <figcaption class="caption">
-              Image generated through Microsoft Copilot
+              The Declutter notebook
             </figcaption>
           </figure>
           
@@ -235,7 +250,7 @@
           class="project"
         >
           <div class="project-title">
-            <h4 class="context">An HTML CSS Project</h4>
+            <h4 class="context">An <span class="skill">HTML CSS</span> Project</h4>
             <H3>
               Survey Form
             </H3>
@@ -243,13 +258,13 @@
           </div>
 
           <figure>
-            <iframe src="https://s-hui.github.io/SurveyForm" loading="lazy" title="Survey Form" class="large"></iframe>
+            <iframe src="https://s-hui.github.io/SurveyForm" ></iframe>
             <figcaption class="caption">
               The survey form
             </figcaption>
           </figure>
 
-          <div class="project-description">           
+          <div class="project-description repetitive">           
             <h4>Skills</h4>
             <ul class="skills">
               <li>HTML</li>
@@ -260,7 +275,7 @@
         </a>
 
 
-        <a href="https://s-hui.github.io/SurveyForm" class="cta">
+        <a href="https://s-hui.github.io/SurveyForm.css" class="cta">
           Explore in your browser
         </a>
       </div>
@@ -273,7 +288,7 @@
           class="project"
         >
           <div class="project-title">
-            <h4 class="context">An HTML CSS Project</h4>
+            <h4 class="context">An <span class="skill">HTML CSS</span> Project</h4>
             <H3>
               Tribute Page
             </H3>
@@ -281,13 +296,13 @@
           </div>
 
           <figure>
-            <iframe src="https://s-hui.github.io/TributePage" loading="lazy" title="Tribute Page" class="large"></iframe>
+            <iframe src="https://s-hui.github.io/TributePage"></iframe>
             <figcaption class="caption">
               The tribute page
             </figcaption>
           </figure>
 
-          <div class="project-description"> 
+          <div class="project-description repetitive"> 
             <h4>Skills Involved</h4>
             <ul class="skills">
               <li>HTML</li>
