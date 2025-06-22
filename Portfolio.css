@@ -2,7 +2,7 @@
     --main-color: #FAFAFA;
     --font-color: #222222;
     --second-font-color: white;
-    --accent-color: #FFCC00;
+    --accent-color: #FFCC00 ;
     --background-color: #A88B7F;
     --second-background-color: #6A7BA3;
 }
@@ -10,7 +10,7 @@
 html{
     font-size: 62.5%;
     font-family: "Lato", sans-serif;
-    background: var(--background-color);
+    background: var(--second-background-color);
     max-width: 100vw;
 
 }
@@ -23,46 +23,52 @@ html{
 body{
     margin: 0;
 }
-  
-  
+ 
+
 nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--second-background-color);
+    background: var(--background-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
+    gap: 1.5rem;
     z-index: 1;
-    border-bottom: 0.5vh solid var(--background-color);
+    padding: 2vh 2vw;
+
+
+
 }
-  
-.nav-items{
-    padding: 2vh 3.5vw;
-    font-size: 1.5rem;
+
+
+.nav-items, svg{
+    width: 1.5rem;
+    height: 2.5rem;
+    font-size: 0.5rem;
     font-weight: 600;
     text-decoration: none;
     color: var(--second-font-color);
+    fill: var(--second-font-color);
 }
+    
   
-#nav-bar-space{
-    width: 25vw;
-}
+
   
 #welcome-section{
-    height: 90vh;
+    height: 85vh;
     width: 100%;
-    background-color: var(--second-background-color);
+    background: linear-gradient(var(--background-color) 10%, var(--second-background-color));
     color: var(--second-font-color);
-    border-radius:0 0 35% 20%;
+    border-radius:0 0 90% 80%;
     text-align: center;
-    border-bottom: 0.5vh solid var(--font-color);
+    border-bottom: 0.5vh ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-  
+
+/*
 #wave{
     rotate: -35deg;
     transform-origin: 50% 100%;
@@ -99,7 +105,8 @@ nav{
 
     }
 }
-  
+*/
+
 h1, #greetings{
     font-size: 8rem;
     margin: 0;
@@ -109,7 +116,39 @@ h1, #greetings{
     font-size: 2rem;
     width: 60%;
 }
-  
+
+
+
+#BA, #RevOps, #MarOps, #SalesOps{
+    animation-duration: 2.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+    color: var(--accent-color);
+    font-weight: 1000;
+    
+ 
+
+}
+
+#BA{
+    animation-name: BA;
+}
+
+#RevOps{
+    animation-name: RevOps;
+}
+
+#MarOps{
+    animation-name: MarOps;
+}
+
+#SalesOps{
+    animation-name: SalesOps;
+}
+
+/*
 #point-down{
     animation: catch-attention 1.5s linear;
     opacity: 1;
@@ -125,31 +164,100 @@ h1, #greetings{
 
     }
 }
+*/
 
+
+
+@keyframes BA{
+    0%{
+        display: block;
+        opacity: 1;
+    }
+
+    24%, 100%{
+        display: none;
+    }
+}
+
+
+@keyframes RevOps{
+    0%, 24%{
+        display: none;
+    }
+
+    25%{
+        display: block;
+        opacity: 1;
+    }
+
+    49%, 100%{
+        display: none;
+    }
+}
+
+
+@keyframes MarOps {
+    0%, 49%{
+        display: none;
+    }
+
+    50%{
+        display: block;
+        opacity: 1;
+    }
+
+    74%, 100%{
+        display: none;}
+
+}
+
+@keyframes SalesOps {
+    0%, 74%{
+        display: none;
+    }
+
+    75%, 99%{
+        display: block;
+        opacity: 1;
+    }
+}
 
 h2{
     font-size: 3.5rem;
     margin: 0;
-    padding: 5vh;
+    padding: 5vh 0 8vh 0;
+
     color: var(--second-font-color);
     text-align: center;
+    
 }
 
 
+#arrow{
+    border-radius: 90% 80% 0 0 ;
+    background: var(--main-color);
+    height: 50vh;
+    width: 95%;
+    margin: 0 auto;
+}
 
 #projects-content{
-    border-radius: 10% 5% 20% 15%; 
+    background:  var(--main-color);
+    width: 95%;
+    margin: -5vh auto 10vh auto;
+
 }
 
+
 .project-tile{
+    position: relative;
+    bottom: 35vh;
     padding: 10vh 10vw;
-    background: var(--main-color);
     border-radius: 10% 5% 20% 15%; 
     text-align: center;
     width: 80vw;
-    margin:5vh auto;
-    border-top: 0.3vh solid var(--font-color);
     display: grid; 
+    margin: 0 auto;
 }
 
 
@@ -168,8 +276,12 @@ h2{
 
 .context{
     margin: -2.5rem auto;
-    color: var(--second-background-color);
+    color: var(--background-color);
     
+}
+
+.skill{
+    color: var(--second-background-color);
 }
 
 h3{
@@ -181,14 +293,14 @@ h3{
 
 
 h4{
-    color: var(--second-background-color);
+    color: var(--background-color);
     margin-bottom: 0;
 }
 
 h5{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: var(--background-color);
+    color: var(--second-background-color);
 }
 
 figure{
@@ -210,8 +322,6 @@ iframe{
     width: 100%;
     border-radius: 1% 1% 1% 1%;
     border:0;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
 }
 
 figcaption{
@@ -230,8 +340,8 @@ figcaption{
     margin: 3vh auto 0;
     padding: 2vh;
     text-align: center;
-    background-color: var(--accent-color);
-    color: var(--font-color);
+    background: radial-gradient(closest-side at 20% 80%, var(--second-background-color), var(--background-color));
+    color: var(--main-color);
     font-weight: 600;
     text-decoration: none;
     font-size: 1.5rem;
@@ -244,13 +354,17 @@ figcaption{
 
   hr{
     height: 0.5vh;
-    background-color: var(--main-color);
+    display :none;
     width: 100%;
     margin: 0;
   }
+
+  .repetitive{
+    display: none;
+  }
   
   footer{
-    background-color: var(--second-background-color);
+    background-color: var(--background-color);
     padding-bottom: 5vh;
     width: 100%;
   }
@@ -258,7 +372,7 @@ figcaption{
   @media all and (max-width: 500px){
 
   
-    #nav-bar-space, #wave, .self-introduction{
+    #nav-bar-space, #wave, .self-introduction, .concise{
       display: none;
     }
 
@@ -278,9 +392,12 @@ figcaption{
       
     .project-tile{
         margin-top: 2vh;
-        background: var(--main-color);
+
         border-radius: 5% 3% 5% 6%;
         width: 92vw;
     }
-        
+    
+    #welcome-section{
+        height: 70vh;
+    }
   }
