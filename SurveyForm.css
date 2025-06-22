@@ -16,7 +16,7 @@ html{
 
 body{
   max-width: 700px;
-  margin: 5%;
+  margin: 5% auto;
   font-size: var(--answer);
 }
 
