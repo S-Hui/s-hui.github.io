@@ -378,7 +378,7 @@ figcaption{
   @media all and (max-width: 500px){
 
   
-    #nav-bar-space, #wave, .self-introduction, .concise{
+    #nav-bar-space, #wave, .concise{
       display: none;
     }
 
