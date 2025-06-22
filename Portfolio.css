@@ -112,7 +112,7 @@ h1, #greetings{
     margin: 0;
 }
   
-.self-introduction{
+.self-introduction, #Aspiration-line{
     font-size: 2rem;
     width: 60%;
 }
@@ -127,6 +127,7 @@ h1, #greetings{
     opacity: 0;
     color: var(--accent-color);
     font-weight: 1000;
+
     
  
 
@@ -170,11 +171,16 @@ h1, #greetings{
 
 @keyframes BA{
     0%{
-        display: block;
+        display: none;
+        opacity: 0;
+    }
+
+    1%{
+        display: inline;
         opacity: 1;
     }
 
-    24%, 100%{
+    24%, 99%, 100%{
         display: none;
     }
 }
@@ -186,11 +192,11 @@ h1, #greetings{
     }
 
     25%{
-        display: block;
+        display: inline;
         opacity: 1;
     }
 
-    49%, 100%{
+    49%, 99%, 100%{
         display: none;
     }
 }
@@ -202,11 +208,11 @@ h1, #greetings{
     }
 
     50%{
-        display: block;
+        display: inline;
         opacity: 1;
     }
 
-    74%, 100%{
+    74%, 99%{
         display: none;}
 
 }
@@ -217,7 +223,7 @@ h1, #greetings{
     }
 
     75%, 99%{
-        display: block;
+        display: inline;
         opacity: 1;
     }
 }
