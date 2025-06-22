@@ -1,6 +1,6 @@
 html{
   font-size: 62.5%;
-  margin: 5vh 5vw;
+  margin: 3vh 3vw;
 
 }
 
@@ -28,7 +28,6 @@ header{
 
 
 figure{
-  margin: auto;
   max-width: 500px;
   width: 90%;
   height: auto;
@@ -36,7 +35,7 @@ figure{
 }
 
 figcaption{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -44,7 +43,6 @@ img{
   border-radius: 5%;
   max-width: 100%;
   height: auto;
-  margin: auto;
   margin-bottom: 1rem;
  
 }
@@ -99,21 +97,9 @@ section{
 }
 
 @media screen and (max-width: 600px) {
-  body{
-    font-size: 1.2rem;
-  }
-  
   header{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   
-  section{
-    --font-size: 1.2rem;
-  }
-  
-  img{
-    width: 100%;
-    height: auto;
-  }
   
 }
