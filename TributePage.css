@@ -13,7 +13,7 @@ body{
   background-color: darkblue;
   color: white;
   font-family: courier;
-  margin: 5vw auto;
+  margin: 5% auto;
   max-width: 600px;
 }
 
@@ -77,7 +77,7 @@ section{
     height: calc(var(--font-size));
     width: calc(var(--font-size) / 2);
     background-color: white;
-    vertical-align: sub;
+    vertical-align: middle;
     animation: blink 1.7s infinite;
     
   }
