@@ -1,6 +1,6 @@
 html{
   font-size: 62.5%;
-  margin: 3vh 3vw;
+  margin: 5vh 5vw;
 
 }
 
@@ -28,14 +28,15 @@ header{
 
 
 figure{
+  margin: auto;
   max-width: 500px;
   width: 90%;
   height: auto;
-  
+
 }
 
 figcaption{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -43,6 +44,7 @@ img{
   border-radius: 5%;
   max-width: 100%;
   height: auto;
+  margin: auto;
   margin-bottom: 1rem;
  
 }
@@ -67,22 +69,21 @@ section{
   --font-size: 1.5rem;
   font-size: var(--font-size);
   line-height: 2rem;
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
   display: grid;
   row-gap: 1.5rem;;
-
 }
  
 
-  #typing-sign{
-    display: inline-block;
-    height: 2rem;
-    width: calc(2rem / 2);
-    background-color: white;
-    vertical-align: middle;
-    animation: blink 1.7s infinite;
-    
-  }
+#typing-sign{
+  display: inline-block;
+  height: 2rem;
+  width: calc(2rem / 2);
+  background-color: white;
+  vertical-align: middle;
+  animation: blink 1.7s infinite;
+  
+}
 
 @keyframes blink{
   0%{
@@ -97,9 +98,20 @@ section{
 }
 
 @media screen and (max-width: 600px) {
-  header{
-    font-size: 1.7rem;
+  body{
+    font-size: 1.2rem;
   }
   
+  header{
+    font-size: 1.5rem;
+  }
+  
+  section{
+    --font-size: 1.2rem;
+  }
+  
+  img{
+    width: 100%;
+  }
   
 }
