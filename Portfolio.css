@@ -112,6 +112,11 @@ h1, #greetings{
     margin: 0;
 }
   
+.self-introduction{
+    width: 60%;
+    margin: 0 auto;
+}
+
 .self-introduction, #Aspiration-line{
     font-size: 2rem;
     }
@@ -130,15 +135,15 @@ h1, #greetings{
 
 
 #BA, #RevOps, #MarOps, #SalesOps{ 
+    display: inline;
     position: absolute;
-    animation-duration: 2.8s;
-    animation-fill-mode: forwardward;
+    animation-duration: 2.5s;
+    animation-fill-mode: backward;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     opacity: 0;
     color: var(--accent-color);
     font-weight: 1000;
-
 
     
  
@@ -230,7 +235,7 @@ h1, #greetings{
 
     74%, 99%{
         display: none;
-        opacity: 0;
+        opacity: 0;}
 
 }
 
