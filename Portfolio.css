@@ -29,7 +29,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--accent-color);
+    background: var(--background-color);
     display: flex;
     justify-content: right;
     gap: 1.5rem;
@@ -57,7 +57,7 @@ nav{
 #welcome-section{
     height: 85vh;
     width: 100%;
-    background: linear-gradient(var(--accent-color) 10%, var(--second-background-color));
+    background: linear-gradient(var(--background-color)10%,#fbe2ce , var(--second-background-color));
     color: var(--second-font-color);
     border-radius:0 0 90% 80%;
     text-align: center;
