@@ -375,7 +375,7 @@ figcaption{
     padding: 2vh;
     text-align: center;
     background: radial-gradient(closest-side at 20% 80%, var(--second-background-color), var(--background-color));
-    color: var(--accent-color);
+    color: var(--main-color);
     font-weight: 600;
     text-decoration: none;
     font-size: 1.5rem;
