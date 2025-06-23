@@ -3,7 +3,7 @@
     --font-color: #222222;
     --second-font-color: white;
     --accent-color: #fbe2ce ;
-    --background-color: #936751;
+    --background-color: #dbbda7;
     --second-background-color: #575f78;
 }
 
@@ -57,7 +57,7 @@ nav{
 #welcome-section{
     height: 85vh;
     width: 100%;
-    background: linear-gradient(var(--background-color)10%,#fbe2ce , var(--second-background-color));
+    background: linear-gradient(var(--background-color)10%, var(--second-background-color));
     color: var(--second-font-color);
     border-radius:0 0 90% 80%;
     text-align: center;
