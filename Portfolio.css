@@ -268,7 +268,7 @@ h2{
 #arrow{
     border-radius: 80% 80% 0 0 ;
     background: linear-gradient(transparent 10%, var(--main-color)70%);
-    height: 70vh;
+    height: 80vh;
     width: 95%;
     margin: 0 auto;
 }
@@ -283,7 +283,7 @@ h2{
 
 .project-tile{
     position: relative;
-    bottom: 50vh;
+    bottom: 60vh;
     padding: 10vh 10vw;
     border-radius: 10% 5% 20% 15%; 
     text-align: center;
