@@ -267,7 +267,7 @@ h2{
 
 #arrow{
     border-radius: 90% 80% 0 0 ;
-    background: var(--main-color);
+    background: linear-gradient(transparent 10%, var(--main-color)70%);
     height: 50vh;
     width: 95%;
     margin: 0 auto;
