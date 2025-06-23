@@ -2,7 +2,7 @@
     --main-color: #FAFAFA;
     --font-color: #222222;
     --second-font-color: white;
-    --accent-color: #FFCC00 ;
+    --accent-color: #fbe2ce ;
     --background-color: #936751;
     --second-background-color: #575f78;
 }
@@ -29,7 +29,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--background-color);
+    background: var(--accent-color);
     display: flex;
     justify-content: right;
     gap: 1.5rem;
@@ -57,7 +57,7 @@ nav{
 #welcome-section{
     height: 85vh;
     width: 100%;
-    background: linear-gradient(#fbe2ce 10%, var(--second-background-color));
+    background: linear-gradient(var(--accent-color) 10%, var(--second-background-color));
     color: var(--second-font-color);
     border-radius:0 0 90% 80%;
     text-align: center;
@@ -375,7 +375,7 @@ figcaption{
     padding: 2vh;
     text-align: center;
     background: radial-gradient(closest-side at 20% 80%, var(--second-background-color), var(--background-color));
-    color: var(--main-color);
+    color: var(--accent-color);
     font-weight: 600;
     text-decoration: none;
     font-size: 1.5rem;
