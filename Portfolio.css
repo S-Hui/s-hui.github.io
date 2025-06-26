@@ -47,8 +47,8 @@ nav{
     font-size: 0.5rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--second-font-color);
-    fill: var(--second-font-color);
+    color: var(--font-color);
+    fill: var(--font-color);
 }
     
   
@@ -291,7 +291,7 @@ h2{
     width: 90vw;
     display: grid; 
     margin: 5vh auto 10vh auto;
-    background: linear-gradient(30deg, transparent ,  var(--half-transparent))
+    background: linear-gradient(25deg, transparent, var(--half-transparent))
 }
 
 
@@ -321,7 +321,7 @@ h3{
     margin: 3rem auto;
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--font-color);
 }
 
 
