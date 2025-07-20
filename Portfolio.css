@@ -207,17 +207,17 @@ h1, #greetings{
 
 
 @keyframes RevOps{
-    0%, 26%{
+    0%, 25%{
         display: none;
         opacity: 0;
     }
 
-    27%{
+    26%{
         display: inline;
         opacity: 1;
     }
 
-    52%, 100%{
+    51%, 100%{
         display: none;
         opacity: 0;
     }
@@ -229,11 +229,11 @@ h1, #greetings{
         opacity: 0;
     }
 
-    53%{
+    51%{
         display: inline;
         opacity: 1;
     }
-    78%, 100%{
+    76%, 100%{
         display: none;
         opacity: 0;
     }
@@ -241,28 +241,28 @@ h1, #greetings{
 }
 
 @keyframes MarOps {
-    0%, 78%{
+    0%, 75%{
         display: none;
         opacity: 0;
     }
 
-    79%{
+    76%{
         display: inline;
         opacity: 1;
     }
 
-    98%{
+    99%{
         display: none;
         opacity: 0;}
 
 }
 
 @keyframes Placeholder {
-    0, 97%{
+    0, 98%{
         display: none;
         opacity: 0;
     }
-    98%{
+    99%{
         display: inline;
         opacity: 1;
     }
