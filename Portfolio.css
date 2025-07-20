@@ -231,7 +231,7 @@ h1, #greetings{
         opacity: 1;
     }
 
-    75%, 99%{
+    75%, 95%{
         display: none;
         opacity: 0;}
 
