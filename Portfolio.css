@@ -164,6 +164,10 @@ h1, #greetings{
     animation-name: SalesOps;
 }
 
+#Placeholder{
+    animation-name: Placeholder;
+}
+
 /*
 #point-down{
     animation: catch-attention 1.5s linear;
@@ -253,7 +257,16 @@ h1, #greetings{
 
 }
 
-
+@keyframes Placeholder {
+    0, 97%{
+        display: none;
+        opacity: 0;
+    }
+    98%{
+        display: inline;
+        opacity: 1;
+    }
+}
 
 /*
 
