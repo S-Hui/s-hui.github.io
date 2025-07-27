@@ -366,9 +366,6 @@
   
 }
 
-#silktide-modal legend:first-of-type {
-  display: none;
-}
 
 #silktide-modal legend {
   padding: 0px;
@@ -480,6 +477,10 @@
 /* --------------------------------
   Modal - Footer
 -------------------------------- */
+
+footer{
+  background-color: var(--backgroundColor)
+}
 #silktide-modal footer {
   display: flex;
   flex-direction: column;
