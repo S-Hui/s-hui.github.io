@@ -52,9 +52,10 @@
 -------------------------------- */
 #silktide-wrapper a {
   all: unset;
-  display: inline-block;
-  color: var(--primaryColor);
-  text-decoration: underline;
+  display: block;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #silktide-wrapper a:hover {
@@ -382,6 +383,9 @@
   gap: 24px;*/
 }
 
+#cookie-preferences {
+  display: none;
+}
 /* --------------------------------
   Modal - Switches
 -------------------------------- */
@@ -498,7 +502,7 @@ footer{
 #silktide-modal footer a {
   margin-left: auto;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--textColor);
 }
