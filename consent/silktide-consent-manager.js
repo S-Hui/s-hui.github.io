@@ -468,8 +468,9 @@ class SilktideCookieBanner {
 
 						return `
             <fieldset>
-                <legend>${type.name}</legend>
+                
                 <div class="cookie-type-content">
+		    <legend>${type.name}</legend>
                     <div class="cookie-type-description">${type.description}</div>
                     <label class="switch" for="cookies-${type.id}">
                         <input type="checkbox" id="cookies-${type.id}" ${
