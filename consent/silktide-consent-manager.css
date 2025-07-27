@@ -121,20 +121,20 @@
   color: var(--primaryColor);
 }
 */
-/*
+
 #silktide-wrapper .st-button--secondary {
   background-color: var(--backgroundColor);
   color: var(--primaryColor);
 }
-*/
 
-/*
+
+
 
 #silktide-wrapper .st-button--secondary:hover {
   background-color: var(--primaryColor);
   color: var(--backgroundColor);
 }
-*/
+
 
 /* --------------------------------
   Banner
@@ -279,7 +279,7 @@
   border: 0px;
   transform: translate(0px, -20px);
   opacity: 0;
-  /*animation: silktide-slideInUp-center 350ms ease-out forwards;*/
+  animation: silktide-slideInUp-center 350ms ease-out forwards;
   box-shadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
   font-family: var(--fontFamily);
   color: var(--textColor);
@@ -540,7 +540,7 @@
 /* --------------------------------
   Animations
 -------------------------------- */
-/*
+
 @keyframes silktide-fadeIn {
   from {
     opacity: 0;
@@ -593,4 +593,4 @@
     transform: translate(0px, 0px);
   }
 }
-*/
+
