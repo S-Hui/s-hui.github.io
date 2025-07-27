@@ -13,7 +13,7 @@
 #silktide-wrapper {
               --focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000, 0 0 0 6px #ffffff;
               --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
-              --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
+              --fontFamily: "Lato", sans-serif;
               --primaryColor: #dbbda7;
               --backgroundColor: #575F78;
               --textColor: #ffffff;
@@ -58,12 +58,14 @@
 
 #silktide-wrapper a:hover {
   cursor: pointer;
-  color: var(--textColor);
+  /*color: var(--textColor);*/
 }
 
 /* --------------------------------
   Focus Styles
 -------------------------------- */
+
+/*
 #silktide-wrapper a:focus,
 #silktide-wrapper #silktide-banner button:focus,
 #silktide-wrapper #silktide-modal button:focus,
@@ -76,7 +78,7 @@
 #silktide-wrapper #silktide-cookie-icon:focus {
   border-radius: 50%;
 }
-
+*/
 /* --------------------------------
   General Styles
 -------------------------------- */
@@ -205,9 +207,11 @@
   background-color: var(--backgroundColor);
 }
 
+/*
 #silktide-banner a:hover {
   color: var(--textColor);
 }
+*/
 
 #silktide-banner a.silktide-logo {
   display: block;
