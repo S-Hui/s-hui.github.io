@@ -105,7 +105,7 @@
 }
 
 #silktide-wrapper .st-button:nth-child(2){
-  background-color: none;
+  background-color: var(--backgroundColor);
   color: var(--primaryColor);
   
 }
