@@ -87,12 +87,8 @@
 
 /* The options buttons*/
 #silktide-wrapper .st-button {
-  color: var(--backgroundColor);
   font-weight: 600;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 0.3vh solid var(--background-color);
+  border: none;
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
@@ -105,6 +101,13 @@
 
 #silktide-wrapper .st-button:first-child{
   background-color: var(--primaryColor);
+  color: var(--backgroundColor);
+}
+
+#silktide-wrapper .st-button:last-child{
+  background-color: none;
+  color: var(--primaryColor);
+  
 }
 
 /*
