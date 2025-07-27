@@ -391,7 +391,7 @@
   width: 74px;
   cursor: pointer;
 }
-/*
+
 
 #silktide-modal .switch:focus-within {
   outline: none;
@@ -403,7 +403,7 @@
   opacity: 0;
   position: absolute;
 }
-*/
+
 
 /* Unchecked Switch Styles */
 #silktide-modal .switch__pill {
