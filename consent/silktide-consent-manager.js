@@ -313,7 +313,7 @@ class SilktideCookieBanner {
 				: ""
 		}>${rejectNonEssentialButtonText}</button>`;
 
-		/*
+		
 		// Preferences button
 		const preferencesButtonText = this.config.text?.banner?.preferencesButtonText || "Preferences";
 		const preferencesButtonLabel = this.config.text?.banner?.preferencesButtonAccessibleLabel;
@@ -322,7 +322,7 @@ class SilktideCookieBanner {
 				? ` aria-label="${preferencesButtonLabel}"`
 				: ""
 		}><span>${preferencesButtonText}</span></button>`;
-  		*/
+  		
 
 		// Silktide logo link
 		const silktideLogo = `
