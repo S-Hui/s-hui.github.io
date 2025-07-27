@@ -366,7 +366,7 @@
   
 }
 
-
+/*Preferences modal toggle button legends*/
 #silktide-modal legend {
   padding: 0px;
   margin: 0px 0px 10px;
@@ -376,10 +376,10 @@
 }
 
 #silktide-modal .cookie-type-content {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  /*justify-content: space-between;
   align-items: flex-start;
-  /*gap: 24px;*/
+  gap: 24px;*/
 }
 
 /* --------------------------------
@@ -497,6 +497,10 @@ footer{
 
 #silktide-modal footer a {
   margin-left: auto;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--textColor);
 }
 
 /* Cookie Icon */
