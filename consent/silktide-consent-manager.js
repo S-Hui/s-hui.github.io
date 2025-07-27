@@ -488,8 +488,10 @@ class SilktideCookieBanner {
 					.join("")}
       </section>
       <footer>
+      	<div id="update-preferences">
         ${acceptAllButton}
         ${rejectNonEssentialButton}
+	</div>
         ${creditLink}
       </footer>
     `;
