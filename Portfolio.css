@@ -121,6 +121,10 @@ h1, #greetings{
     font-size: 2rem;
     }
 
+#clarification{
+    font-size: 1rem;
+}
+
 #Aspiration-line{
     display: flex;
     justify-content:center;
