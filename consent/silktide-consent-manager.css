@@ -31,7 +31,8 @@
   border: 0px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  font-size: 62.5%;
             }
 
 /* Backdrop (Global) */
@@ -84,36 +85,41 @@
 -------------------------------- */
 
 #silktide-wrapper .st-button {
-  color: var(--backgroundColor);
+  /*color: var(--backgroundColor);
   background-color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
+  border: 2px solid var(--primaryColor);*/
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.7 rem;
   cursor: pointer;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 #silktide-wrapper .st-button--primary {
 }
 
+/*
 #silktide-wrapper .st-button--primary:hover {
   background-color: var(--backgroundColor);
   color: var(--primaryColor);
 }
+*/
 
 #silktide-wrapper .st-button--secondary {
   background-color: var(--backgroundColor);
   color: var(--primaryColor);
 }
 
+/*
+
 #silktide-wrapper .st-button--secondary:hover {
   background-color: var(--primaryColor);
   color: var(--backgroundColor);
 }
+*/
 
 /* --------------------------------
   Banner
@@ -124,7 +130,7 @@
   background-color: var(--backgroundColor);
   box-sizing: border-box;
   padding: 32px;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   pointer-events: auto;
   border: 0px;
   position: fixed;
@@ -138,10 +144,11 @@
   animation-delay: 0.3s;
   box-shadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
 }
-
+/*
 #silktide-banner:focus {
   border-radius: 50%;
 }
+*/
 
 #silktide-banner.center {
   top: 50%;
@@ -264,7 +271,7 @@
   flex-direction: column;
   padding: 30px;
   background-color: var(--backgroundColor);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   box-sizing: border-box;
 }
 
@@ -323,10 +330,10 @@
 }
 
 #silktide-modal p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
   color: var(--textColor);
-  margin: 0px 0px 15px;
+  margin: 0px 0px 1.5rem;
 }
 
 #silktide-modal p:last-of-type {
@@ -369,6 +376,7 @@
   width: 74px;
   cursor: pointer;
 }
+/*
 
 #silktide-modal .switch:focus-within {
   outline: none;
@@ -380,6 +388,7 @@
   opacity: 0;
   position: absolute;
 }
+*/
 
 /* Unchecked Switch Styles */
 #silktide-modal .switch__pill {
