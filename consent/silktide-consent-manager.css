@@ -366,7 +366,7 @@
   
 }
 
-#silktide-modal legend:last-of-type {
+#silktide-modal legend:first-of-type {
   display: none;
 }
 
