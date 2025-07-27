@@ -84,10 +84,16 @@
   General Styles
 -------------------------------- */
 
+
+/* The options buttons*/
 #silktide-wrapper .st-button {
   color: var(--backgroundColor);
   background-color: var(--primaryColor);
-  /*border: 2px solid var(--primaryColor);*/
+  font-weight: 600;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.3vh solid var(--background-color);
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
